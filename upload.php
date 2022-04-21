@@ -10,7 +10,7 @@ echo "tamaño: ".$filesize;
 $imagen = "img/".$filename;
 if($filetype == "image/jpeg" && $filesize <=2000000){
 	move_uploaded_file($filetmpname,$imagen);
-	echo "<img src='$imagen' height=80% width=80% /">;
+	echo "<img src='$imagen' height=80% width=80% />";
 }else{
 	echo "La imagen no cumple con lo solicitado";
 }
